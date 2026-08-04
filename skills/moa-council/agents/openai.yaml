@@ -1,0 +1,6 @@
+interface:
+  display_name: "MoA Council"
+  short_description: "Recorded multi-agent deliberation for hard decisions"
+  default_prompt: "Use $moa-council to convene a recorded design or review council."
+policy:
+  allow_implicit_invocation: false
