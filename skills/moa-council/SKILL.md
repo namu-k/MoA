@@ -1,11 +1,12 @@
 ---
 name: moa-council
-description: Explicit-only recorded deliberation for consequential shape, design, decide, and review work.
+description: Explicit-only recorded deliberation for consequential shape, design, decide, and review work. Use only when the user invokes $moa-council (Codex) or /moa-council (Claude Code) by name.
+disable-model-invocation: true
 ---
 
 # MoA Council
 
-Invoke only as `$moa-council <shape|design|decide|review> <task>`. Similar prose is never activation.
+Invoke only as `$moa-council <shape|design|decide|review> <task>` (Codex) or `/moa-council <shape|design|decide|review> <task>` (Claude Code). Similar prose is never activation.
 
 Use two to four distinct read-only participant sessions. Start with blind proposals; then map claims, run only targeted critiques and claimant revisions (at most two rounds), collect final stances, request one journal-bound synthesis, and finalize through `scripts/moa_run.py`. The host chooses lenses and semantic conclusions; the runner validates public envelopes, records legal events, and computes the truthful disposition.
 

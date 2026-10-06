@@ -52,6 +52,8 @@ class AdapterTests(unittest.TestCase):
     def test_explicit_only_metadata_and_no_dependency(self):
         metadata = (ROOT / "agents" / "openai.yaml").read_text()
         self.assertIn("allow_implicit_invocation: false", metadata)
+        frontmatter = (ROOT / "SKILL.md").read_text().split("\n---\n", 1)[0]
+        self.assertIn("disable-model-invocation: true", frontmatter)
         source = (ROOT / "scripts" / "moa_run.py").read_text()
         self.assertNotIn("import requests", source)
         self.assertNotIn("from pydantic", source)
