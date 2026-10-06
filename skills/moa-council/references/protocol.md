@@ -12,6 +12,8 @@ Provider commands are argv lists, never a shell. The runner checks participant/d
 
 ## JSON operation examples
 
+Each operation reads one JSON payload from stdin and prints one JSON result, for example `printf '%s' '<json>' | python3 <skill-root>/scripts/moa_run.py init`.
+
 `init` receives a mode, task, two-to-four participant records, and optional host facts such as `cwd_identity`, `cli_versions`, and `run_root`:
 
 ```json
